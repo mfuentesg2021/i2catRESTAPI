@@ -19,13 +19,13 @@ Specifically, you should provide an API with two endpoints to provide:
 A python file including the app on python_i2cat.py has been generated.  
 The 2 endopints requested can be depicted on host by accesing the following :
 
- 1.-  The first endopint need as input   http://127.0.0.1:6789/post/<order>/<pagesize>
+ 1.-  The first endopint need as input   http://127.0.0.1:6789/post/+ order/+ pagesize
         example :  " http://127.0.0.1:6789/post/asc/3"   
       <order> is limited to : asc ord descto get the  first/oldest posts from 31/5/2021.
       The date 31/5/2021 has already has already been parsed on the url for requests.get( ) with value fromdate= '1622419200'.
        The result are the <pagesize> first/oldest (<order>) posts  from 31/5/2021 in a list of dictionaries.
 
- 1.-  The first endopint need as input   http://127.0.0.1:6789/badges/<order>
+ 1.-  The first endopint need as input   http://127.0.0.1:6789/badges/ + order
         example :  " http://127.0.0.1:6789/badges/desc"    
        <order> is limited to : asc or desc .
       The date 31/5/2021 has already has already been parsed on the url for requests.get( ) with value fromdate= '1622419200'.
