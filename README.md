@@ -37,6 +37,9 @@ The 2 endopints requested can be depicted on host by accesing the following :
         The **Dockerfile** contains the steps tu create the image  and tag on Ubuntu
          Create the image:
          sudo docker build -t mfuentesg2021/i2cat .
+         You can then :
+          a) sudo docker pull mfuentesg2021/i2cat   :  to download the image created
+          b) sudo docker run -p 6789:6789 -ti --rm mfuentesg2021/i2cat  : to run the image in port 6789
     
      
     
