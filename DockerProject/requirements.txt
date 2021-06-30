@@ -1,5 +1,3 @@
-flask
-requests
-Api
-Resource
+Flask
 flask_restful
+requests
