@@ -1,15 +1,10 @@
-# syntax=docker/dockerfile:1
-FROM ubuntu
+FROM python:3
 
-RUN apt-get update
-RUN apt-get install -y python3-pip
+WORKDIR /usr/src/app
 
-RUN mkdir app
+COPY requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-COPY requirements.txt /app/requirements.txt
-COPY python_i2cat.py /app/python_i2cat.py
-
-RUN pip install -r /app/requirements.txt
-
+COPY . /usr/src/app
 EXPOSE 6789
-ENTRYPOINT ["/app/python_i2cat.py"]
+CMD [ "python3", "./python_i2cat.py"]
