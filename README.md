@@ -34,9 +34,10 @@ The 2 endopints requested can be depicted on host by accesing the following :
   
   
 ## Deployment (Docker)
-        The **Dockerfile** contains the steps tu create the image  and tag on windows
+        The **Dockerfile** contains the steps tu create the image  and tag on Ubuntu
          Create the image:
-         docker build -f DockerProject/Dockerfile -t mfuentesg2021/i2cat .   
+         sudo docker build -t mfuentesg2021/i2cat .
+    
      
     
          
